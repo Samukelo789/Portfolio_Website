@@ -17,28 +17,28 @@
             --accent: #f97316;
             --accent-dark: #ea580c;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: var(--dark);
             color: var(--light);
             line-height: 1.6;
         }
-        
+
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        
-        /* Header & Navigation */
+
+        /* Header & Navigation (Unchanged) */
         header {
             background-color: rgba(15, 23, 42, 0.9);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -48,29 +48,29 @@
             z-index: 1000;
             backdrop-filter: blur(10px);
         }
-        
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
         }
-        
+
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--primary);
         }
-        
+
         .nav-links {
             display: flex;
             list-style: none;
         }
-        
+
         .nav-links li {
             margin-left: 30px;
         }
-        
+
         .nav-links a {
             text-decoration: none;
             color: var(--light);
@@ -78,7 +78,7 @@
             transition: color 0.3s;
             position: relative;
         }
-        
+
         .nav-links a:after {
             content: '';
             position: absolute;
@@ -89,16 +89,16 @@
             background-color: var(--primary);
             transition: width 0.3s;
         }
-        
+
         .nav-links a:hover {
             color: var(--primary);
         }
-        
+
         .nav-links a:hover:after {
             width: 100%;
         }
-        
-        /* Hero Section */
+
+        /* Hero Section (Unchanged) */
         .hero {
             padding: 150px 0 100px;
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -106,7 +106,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero:before {
             content: '';
             position: absolute;
@@ -116,7 +116,7 @@
             height: 100%;
             background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
         }
-        
+
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
@@ -125,21 +125,22 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        
+
         .hero p {
             font-size: 1.2rem;
             color: var(--gray);
             max-width: 700px;
             margin: 0 auto 30px;
         }
-        
+
         .profile-img {
-            width: 300px;         /* set desired size */
-            height: 300px;        /* must be equal to width for circle */
-            border-radius: 90%;   /* makes it circular */
-            object-fit: cover;    /* crops the image to fit */
-            border: 3px solid #333; /* optional border */
+            width: 300px;
+            height: 300px;
+            border-radius: 90%;
+            object-fit: cover;
+            border: 3px solid #333;
         }
+
         .btn {
             display: inline-block;
             padding: 12px 30px;
@@ -153,52 +154,52 @@
             cursor: pointer;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        
+
         .btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
             background: linear-gradient(to right, var(--primary-dark), var(--primary));
         }
-        
-        /* Sections */
+
+        /* Sections (Unchanged) */
         section {
             padding: 80px 0;
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 50px;
         }
-        
+
         .section-title h2 {
             font-size: 2.5rem;
             color: var(--light);
             margin-bottom: 15px;
         }
-        
+
         .section-title p {
             color: var(--gray);
             max-width: 600px;
             margin: 0 auto;
         }
-        
-        /* About */
+
+        /* About (Unchanged) */
         .about-content {
             display: flex;
             align-items: center;
             gap: 50px;
         }
-        
+
         .about-text {
             flex: 1;
         }
-        
+
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
             color: var(--light);
         }
-        
+
         .about-image {
             flex: 1;
             background: linear-gradient(145deg, var(--dark-light), var(--dark));
@@ -211,14 +212,14 @@
             font-size: 5rem;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
-        
-        /* Skills */
+
+        /* Skills (Unchanged) */
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        
+
         .skill-category {
             background-color: var(--dark-light);
             padding: 30px;
@@ -226,11 +227,11 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
         }
-        
+
         .skill-category:hover {
             transform: translateY(-5px);
         }
-        
+
         .skill-category h3 {
             font-size: 1.5rem;
             margin-bottom: 20px;
@@ -239,11 +240,11 @@
             align-items: center;
             gap: 10px;
         }
-        
+
         .skill-list {
             list-style: none;
         }
-        
+
         .skill-list li {
             margin-bottom: 15px;
             display: flex;
@@ -251,18 +252,18 @@
             gap: 10px;
             color: var(--gray);
         }
-        
+
         .skill-list li i {
             color: var(--primary);
         }
-        
-        /* Projects */
+
+        /* Projects (Updated) */
         .projects-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        
+
         .project {
             background-color: var(--dark-light);
             border-radius: 10px;
@@ -270,56 +271,80 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
         }
-        
+
         .project:hover {
             transform: translateY(-5px);
         }
-        
+
         .project-image {
-            height: 200px;
-            background: linear-gradient(145deg, var(--primary), var(--primary-dark));
+            width: 100%;
+            max-height: 250px; /* Allow flexibility in height */
+            aspect-ratio: 16 / 9; /* Maintain consistent aspect ratio */
+            position: relative;
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 2rem;
-            position: relative;
-            overflow: hidden;
-            padding-top: 50px;
         }
-        
-        .project-image:before {
-            content: '';
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensure full image is visible */
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .project-image:hover img {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        .image-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
         }
-        
+
+        .image-overlay:hover {
+            opacity: 1;
+        }
+
+        .view-text {
+            color: white;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
         .project-content {
             padding: 20px;
         }
-        
+
         .project h3 {
             font-size: 1.3rem;
             margin-bottom: 10px;
             color: var(--light);
         }
-        
+
         .project p {
             color: var(--gray);
             margin-bottom: 15px;
         }
-        
+
         .project-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             margin-bottom: 15px;
         }
-        
+
         .project-tag {
             background-color: rgba(99, 102, 241, 0.2);
             color: var(--primary);
@@ -327,14 +352,14 @@
             border-radius: 20px;
             font-size: 0.8rem;
         }
-        
-        /* Education */
+
+        /* Education (Unchanged) */
         .education-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        
+
         .education-item {
             background-color: var(--dark-light);
             padding: 30px;
@@ -342,31 +367,31 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
         }
-        
+
         .education-item:hover {
             transform: translateY(-5px);
         }
-        
+
         .education-item h3 {
             color: var(--primary);
             margin-bottom: 15px;
             font-size: 1.3rem;
         }
-        
+
         .education-item .date {
             color: var(--accent);
             margin-bottom: 15px;
             display: block;
             font-weight: 500;
         }
-        
-        /* Certifications */
+
+        /* Certifications (Unchanged) */
         .certs-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
-        
+
         .cert-item {
             background-color: var(--dark-light);
             padding: 20px;
@@ -375,36 +400,36 @@
             text-align: center;
             transition: transform 0.3s;
         }
-        
+
         .cert-item:hover {
             transform: translateY(-5px);
         }
-        
+
         .cert-item i {
             font-size: 2.5rem;
             color: var(--primary);
             margin-bottom: 15px;
         }
-        
-        /* Contact */
+
+        /* Contact (Unchanged) */
         .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 50px;
         }
-        
+
         .contact-info {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-        
+
         .contact-item {
             display: flex;
             align-items: center;
             gap: 15px;
         }
-        
+
         .contact-item i {
             width: 50px;
             height: 50px;
@@ -416,25 +441,25 @@
             color: white;
             font-size: 1.2rem;
         }
-        
+
         .contact-form {
             background-color: var(--dark-light);
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
-        
+
         .form-group {
             margin-bottom: 20px;
         }
-        
+
         .form-group label {
             display: block;
             margin-bottom: 5px;
             font-weight: 500;
             color: var(--light);
         }
-        
+
         .form-group input,
         .form-group textarea {
             width: 100%;
@@ -445,77 +470,82 @@
             font-size: 1rem;
             color: var(--light);
         }
-        
+
         .form-group textarea {
             min-height: 150px;
             resize: vertical;
         }
-        
-        /* Footer */
+
+        /* Footer (Unchanged) */
         footer {
             background-color: var(--dark-light);
             color: white;
             padding: 50px 0 20px;
             text-align: center;
         }
-        
+
         .footer-content {
             display: flex;
             flex-direction: column;
             gap: 30px;
             margin-bottom: 30px;
         }
-        
+
         .social-links {
             display: flex;
             justify-content: center;
             gap: 20px;
         }
-        
+
         .social-links a {
             color: white;
             font-size: 1.5rem;
             transition: color 0.3s;
         }
-        
+
         .social-links a:hover {
             color: var(--primary);
         }
-        
+
         .copyright {
             padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.9rem;
         }
-        
-        /* Responsive Design */
+
+        /* Responsive Design (Updated for Projects) */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-            
+
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             .about-content {
                 flex-direction: column;
             }
-            
+
             .about-image {
                 width: 100%;
                 height: 300px;
             }
-            
+
             .contact-container {
                 grid-template-columns: 1fr;
+            }
+
+            .project-image {
+                max-height: 200px; /* Smaller height for mobile */
+                aspect-ratio: 16 / 9;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header & Navigation -->
+    <!-- Header & Navigation (Unchanged) -->
     <header>
         <div class="container">
             <nav>
@@ -532,16 +562,15 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Unchanged) -->
     <section class="hero" id="home">
         <div class="container">
             <h1>Data Science | Data Analytics Portfolio</h1>
             <p>I'm a Computer Science and Chemistry student specializing in data science, data analytics, and software development with industry-recognized certifications.</p>
-            
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section (Unchanged) -->
     <section id="about">
         <div class="container">
             <div class="section-title">
@@ -556,13 +585,13 @@
                     <p>I have earned certifications in Data Analytics from Explore AI Academy and Data Science from Cisco, demonstrating my commitment to professional development in these cutting-edge fields. I am currently enrolled in a Data Science course under Explore AI.</p>
                 </div>
                 <div class="about-image">
-                    <img src="me.jpg" alt="Wandile Shabalala" class="profile-img"> 
+                    <img src="me.jpg" alt="Wandile Shabalala" class="profile-img">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section (Unchanged) -->
     <section id="skills" style="background-color: #0f172a;">
         <div class="container">
             <div class="section-title">
@@ -584,9 +613,9 @@
                 <div class="skill-category">
                     <h3><i class="fas fa-chart-line"></i> Data Analytics & Science</h3>
                     <ul class="skill-list">
-                        <li><i class="fas fa-check"></i> Data Visualization (Poweer BI | Matplotlib)</li>
+                        <li><i class="fas fa-check"></i> Data Visualization (Power BI | Matplotlib)</li>
                         <li><i class="fas fa-check"></i> Statistical Analysis</li>
-                        <li><i class="fas fa-check"></i> Machine Learning (Scikitlearn & Tensorflow)</li>
+                        <li><i class="fas fa-check"></i> Machine Learning (Scikit-learn & TensorFlow)</li>
                         <li><i class="fas fa-check"></i> Database Management</li>
                         <li><i class="fas fa-check"></i> Data Wrangling & Cleaning</li>
                         <li><i class="fas fa-check"></i> Big Data Technologies</li>
@@ -596,7 +625,7 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section (Updated) -->
     <section id="projects">
         <div class="container">
             <div class="section-title">
@@ -606,59 +635,65 @@
             <div class="projects-container">
                 <!-- Data Analytics Project 1 -->
                 <div class="project">
-    <div class="project-image">
-        <img src="Screenshot 2025-09-13 212253.png" alt="South African Unemployment Visualization Dashboard" class="project-img">
-        <div class="image-overlay">
-            <span class="view-text">View Project</span>
-        </div>
-    </div>
-    <div class="project-content">
-        <h3>South African Unemployment Analysis</h3>
-        <p>Created an interactive dashboard to analyze and visualize unemployment data, identifying key trends and providing insights into unemployment patterns and contributing factors.</p>
-        <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">Pandas</span>
-            <span class="project-tag">Matplotlib</span>
-            <span class="project-tag">Data Visualization</span>
-            <span class="project-tag">Dashboard</span>
-        </div>
-        <a href="https://github.com/Samukelo789/Data-Science-Projects/blob/main/South%20African%20Unemployment%20Trends.ipynb" class="btn">View Project</a>
-    </div>
-</div>
-                
+                    <div class="project-image">
+                        <img src="Screenshot 2025-09-13 212253.png" alt="South African Unemployment Visualization Dashboard" class="project-img">
+                        <div class="image-overlay">
+                            <span class="view-text">View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>South African Unemployment Analysis</h3>
+                        <p>Created an interactive dashboard to analyze and visualize unemployment data, identifying key trends and providing insights into unemployment patterns and contributing factors.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Pandas</span>
+                            <span class="project-tag">Matplotlib</span>
+                            <span class="project-tag">Data Visualization</span>
+                            <span class="project-tag">Dashboard</span>
+                        </div>
+                        <a href="https://github.com/Samukelo789/Data-Science-Projects/blob/main/South%20African%20Unemployment%20Trends.ipynb" class="btn">View Project</a>
+                    </div>
+                </div>
+
                 <!-- Data Analytics Project 2 -->
                 <div class="project">
                     <div class="project-image">
                         <img src="Diabetes.png" alt="Diabetes Prediction Model" class="project-img">
-        <div class="image-overlay">
+                        <div class="image-overlay">
+                            <span class="view-text">View Project</span>
+                        </div>
                     </div>
                     <div class="project-content">
                         <h3>Diabetes Prediction Model</h3>
-                        <p>Performed RFM analysis and customer segmentation for an e-commerce company to improve marketing strategies and customer retention.</p>
+                        <p>Developed a machine learning model to predict diabetes onset using the Pima Indians Diabetes Dataset, handling missing values and class imbalance.</p>
                         <div class="project-tags">
-                            <span class="project-tag">Binary Clustering</span>
+                            <span class="project-tag">Binary Classification</span>
                             <span class="project-tag">Python</span>
-                            <span class="project-tag">Exploratory Data Analysis</span>
+                            <span class="project-tag">Scikit-learn</span>
+                            <span class="project-tag">SMOTE</span>
                             <span class="project-tag">Data Visualization</span>
                         </div>
                         <a href="https://github.com/Samukelo789/Data-Science-Projects/blob/main/Diabetes_Prediction_Project.ipynb" class="btn">View Project</a>
                     </div>
                 </div>
-                
+
                 <!-- Machine Learning Project 1 -->
                 <div class="project">
                     <div class="project-image">
                         <img src="Fraud.png" alt="Fraud Detection" class="project-img">
-        <div class="image-overlay">
+                        <div class="image-overlay">
+                            <span class="view-text">View Project</span>
+                        </div>
                     </div>
                     <div class="project-content">
                         <h3>Fraud Detection</h3>
-                        <p>Developed a machine learning model to predict equipment failures in industrial settings, reducing downtime by 23%.</p>
+                        <p>Built a machine learning model to detect fraudulent credit card transactions using a synthetic dataset, addressing extreme class imbalance.</p>
                         <div class="project-tags">
                             <span class="project-tag">Machine Learning</span>
                             <span class="project-tag">Pandas</span>
-                            <span class="project-tag">Numpy</span>
-                            <span class="project-tag">Seaborn</span>
+                            <span class="project-tag">Scikit-learn</span>
+                            <span class="project-tag">SMOTE</span>
+                            <span class="project-tag">Data Visualization</span>
                         </div>
                         <a href="https://github.com/Samukelo789/Data-Science-Projects/blob/main/Fraud_Detection(Data_Science_Project).ipynb" class="btn">View Project</a>
                     </div>
@@ -667,57 +702,49 @@
         </div>
     </section>
 
-    <!-- Education & Certifications Section -->
+    <!-- Education & Certifications Section (Unchanged) -->
     <section id="education" style="background-color: #0f172a;">
         <div class="container">
             <div class="section-title">
                 <h2>Education & Certifications</h2>
                 <p>My academic background and professional certifications</p>
             </div>
-            
             <div class="education-container">
                 <div class="education-item">
                     <h3>Bachelor Of Science in Computer Science</h3>
                     <span class="date">2023 - Present</span>
                     <p>Currently in my third year of studies, focusing on software development and data (data science and analytics).</p>
                 </div>
-                
                 <div class="education-item">
                     <h3>DataCamp</h3>
                     <span class="date">2025</span>
                     <p>Machine Learning Certification - Comprehensive training in machine learning algorithms and applications.</p>
                 </div>
-                
                 <div class="education-item">
                     <h3>Explore AI Academy & ALX</h3>
                     <span class="date">2025</span>
                     <p>Data Analytics Certification - Specialized training in data analytics techniques and tools for business intelligence.</p>
                 </div>
             </div>
-            
             <div class="section-title" style="margin-top: 50px; margin-bottom: 30px;">
                 <h3>Certifications</h3>
             </div>
-            
             <div class="certs-container">
                 <div class="cert-item">
                     <i class="fas fa-certificate"></i>
                     <h4>Data Science Certificate</h4>
                     <p>Cisco</p>
                 </div>
-                
                 <div class="cert-item">
                     <i class="fas fa-certificate"></i>
                     <h4>Data Analytics Certificate</h4>
                     <p>Cisco</p>
                 </div>
-                
                 <div class="cert-item">
                     <i class="fas fa-certificate"></i>
                     <h4>Data Analytics Certification</h4>
                     <p>Explore AI Academy</p>
                 </div>
-                
                 <div class="cert-item">
                     <i class="fas fa-certificate"></i>
                     <h4>Machine Learning Certification</h4>
@@ -727,7 +754,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section (Unchanged) -->
     <section id="contact">
         <div class="container">
             <div class="section-title">
@@ -754,7 +781,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h3>Location</h3>
-                            <p>Johannesburg, Doornfontein, South  Africa</p>
+                            <p>Johannesburg, Doornfontein, South Africa</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -790,7 +817,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer (Unchanged) -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -809,16 +836,14 @@
     </footer>
 
     <script>
-        // Simple smooth scrolling for navigation links
+        // Smooth scrolling for navigation links (Unchanged)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
+                if (targetId === '#') return;
                 const targetElement = document.querySelector(targetId);
-                if(targetElement) {
+                if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
